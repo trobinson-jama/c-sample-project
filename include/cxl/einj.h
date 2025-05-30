@@ -13,6 +13,7 @@
 #include <linux/errno.h>
 #include <linux/types.h>
 
+//@satisfies RRD-SREQ-3
 struct pci_dev;
 struct seq_file;
 
@@ -28,6 +29,7 @@ static inline int einj_cxl_available_error_type_show(struct seq_file *m,
 	return -ENXIO;
 }
 
+//@description Injection Error for CXL
 static inline int einj_cxl_inject_error(struct pci_dev *dport_dev, u64 type)
 {
 	return -ENXIO;
