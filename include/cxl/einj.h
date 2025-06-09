@@ -13,7 +13,6 @@
 #include <linux/errno.h>
 #include <linux/types.h>
 
-//@satisfies RRD-SREQ-3
 struct pci_dev;
 struct seq_file;
 
